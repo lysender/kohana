@@ -4,6 +4,7 @@ Icon?
 code_coverage
 *~
 *.swp
+*.komodoproject
 coverage
 kohana_release
 nbproject
