@@ -109,6 +109,15 @@ Kohana::modules(array(
 	));
 
 /**
+ * Set route for image fly
+ */
+Route::set('imagefly', 'imagefly/<image>/<width>/<height>', array('image' => '[-09a-zA-Z_]+', 'width' => '[0-9]+', 'height' => '[0-9]+'))
+	->defaults(array(
+		'controller' => 'imagefly',
+		'action' => 'index'
+	));
+
+/**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
